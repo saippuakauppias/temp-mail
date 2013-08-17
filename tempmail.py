@@ -61,6 +61,8 @@ class TempMail(object):
         Return list of emails in given email address
         or dict with `error` key if mail box is empty.
         """
+        if email is None:
+            email = self.get_email_address()
         if email_hash is None:
             email_hash = self.get_hash(email)
 
