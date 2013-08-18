@@ -20,6 +20,7 @@ setup(
     include_package_data=True,
     packages=find_packages(),
     install_requires=['requests'],
+    py_modules=['tempmail'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
