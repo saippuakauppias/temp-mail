@@ -24,7 +24,7 @@ Get all emails from given email login and domain::
 
     from tempmail import TempMail
 
-    tm = TempMail(email='denis', domain='@gnail.pw')
+    tm = TempMail(login='denis', domain='@gnail.pw')
     print tm.get_mailbox()  # list of emails in denis@gnail.pw
 
 Generate email address and get emails from it::
