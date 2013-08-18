@@ -12,7 +12,7 @@ setup(
     license='MIT',
     description='Wrapper for online service which provides '
                 'temporary email address: https://temp-mail.ru/',
-    long_description=read('README.md') + read('CHANGES.md'),
+    long_description=read('README.rst') + read('CHANGES.rst'),
     keywords='temporary mail email address wrapper api',
     url='https://github.com/saippuakauppias/temp-mail',
     author='Denis Veselov',
