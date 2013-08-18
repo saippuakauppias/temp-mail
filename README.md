@@ -6,7 +6,7 @@ Wrapper for online service which provides temporary email address: https://temp-
 Requirements
 ------------
 
-Required: [requests] =>1.2 and <1.3.
+Required: [requests].
 
 Installation
 ------------

@@ -19,7 +19,7 @@ setup(
     author_email='progr.mail@gmail.com',
     include_package_data=True,
     packages=find_packages(),
-    install_requires=['requests>=1.2,<1.3'],
+    install_requires=['requests'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
