@@ -20,9 +20,13 @@ class TempMail(object):
         """
         Return list of available domains for use in email address.
         """
-        url = 'http://{0}/request/domains/format/json/'.format(self.api_domain)
-        req = requests.get(url)
-        return req.json()
+        if not hasattr(self, '_available_domains'):
+            url = 'http://{0}/request/domains/format/json/'.format(
+                self.api_domain)
+            req = requests.get(url)
+            domains = req.json()
+            setattr(self, '_available_domains', domains)
+        return self._available_domains
 
     def generate_login(self, min_length=6, max_length=10, digits=True):
         """
