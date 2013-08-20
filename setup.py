@@ -8,7 +8,7 @@ def read(filename):
 
 setup(
     name='temp-mail',
-    version='0.1',
+    version='0.2',
     license='MIT',
     description='Wrapper for online service which provides '
                 'temporary email address: https://temp-mail.ru/',
