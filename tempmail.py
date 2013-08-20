@@ -7,7 +7,13 @@ import requests
 
 class TempMail(object):
     """
-    Wrapper for online service which provides temporary email address.
+    API Wrapper for service which provides temporary email address.
+
+    :param login: (optional) login for email address.
+    :param domain: (optional) domain (from current available)
+    for email address.
+    :param api_domain: (optional) domain for temp-mail api.
+    Default value is ``api.temp-mail.ru``.
     """
 
     def __init__(self, login=None, domain=None, api_domain='api.temp-mail.ru'):
@@ -32,6 +38,13 @@ class TempMail(object):
         """
         Generate string for email address login with defined length and
         alphabet.
+
+        :param min_length: (optional) min login length.
+        Default value is ``6``.
+        :param max_length: (optional) max login length.
+        Default value is ``10``.
+        :param digits: (optional) use digits in login generation.
+        Default value is ``True``.
         """
         chars = string.ascii_lowercase
         if digits:
@@ -41,8 +54,8 @@ class TempMail(object):
 
     def get_email_address(self):
         """
-        Use login and domain from class initialization or generate new
-        and return full email address.
+        Return full email address from login and domain from params in class
+        initialization or generate new.
         """
         if self.login is None:
             self.login = self.generate_login()
@@ -57,6 +70,8 @@ class TempMail(object):
     def get_hash(self, email):
         """
         Return md5 hash for given email address.
+
+        :param email: email address for generate md5 hash.
         """
         return md5(email).hexdigest()
 
@@ -64,6 +79,9 @@ class TempMail(object):
         """
         Return list of emails in given email address
         or dict with `error` key if mail box is empty.
+
+        :param email: (optional) email address.
+        :param email_hash: (optional) md5 hash from email address.
         """
         if email is None:
             email = self.get_email_address()
