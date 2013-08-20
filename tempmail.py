@@ -21,6 +21,9 @@ class TempMail(object):
         self.domain = domain
         self.api_domain = api_domain
 
+    def __repr__(self):
+        return u'<TempMail [{0}]>'.format(self.get_email_address())
+
     @property
     def available_domains(self):
         """
