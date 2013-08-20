@@ -1,19 +1,19 @@
 temp-mail
 =========
 
-Python API Wrapper for `temp-mail.ru <http://temp-mail.ru/>`_ service. This service provide temporary email address.
+Python API Wrapper for `temp-mail.ru <http://temp-mail.ru/>`_ service. Temp-mail is a service which lets you use anonymous emails for free.
 
 Requirements
 ------------
 
 `requests <https://crate.io/packages/requests/>`_- required.
 
-`simplejson <https://crate.io/packages/simplejson/>`_ - not required, but useful for a serious speed boost in JSON decode.
+`simplejson <https://crate.io/packages/simplejson/>`_ - optional, for a serious speed boost in JSON decode.
 
 Installation
 ------------
 
-Installing is simple with pip::
+Installing with pip::
 
     $ pip install temp-mail
 
