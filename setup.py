@@ -13,7 +13,8 @@ setup(
     description='Wrapper for online service which provides '
                 'temporary email address: https://temp-mail.ru/',
     long_description=read('README.rst') + read('CHANGES.rst'),
-    keywords='temporary mail email address wrapper api',
+    keywords='temporary temp mail email address wrapper api anon'
+             'anonymous secure free disposable',
     url='https://github.com/saippuakauppias/temp-mail',
     author='Denis Veselov',
     author_email='progr.mail@gmail.com',
