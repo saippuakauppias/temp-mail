@@ -6,7 +6,7 @@ Python API Wrapper for `temp-mail.ru <https://temp-mail.ru/>`_ service. Temp-mai
 Requirements
 ------------
 
-`requests <https://crate.io/packages/requests/>`_- required.
+`requests <https://crate.io/packages/requests/>`_ - required.
 
 `simplejson <https://crate.io/packages/simplejson/>`_ - optional, for a serious speed boost in JSON decode.
 
