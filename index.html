@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Temp-mail by saippuakauppias</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Temp-mail</h1>
+        <p>A python API wrapper for https://temp-mail.ru</p>
+
+        <p class="view"><a href="https://github.com/saippuakauppias/temp-mail">View the Project on GitHub <small>saippuakauppias/temp-mail</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/saippuakauppias/temp-mail/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/saippuakauppias/temp-mail/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/saippuakauppias/temp-mail">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>Python API Wrapper for <a href="https://temp-mail.ru/">temp-mail.ru</a> service. Temp-mail is a service which lets you use anonymous emails for free. You can view full API specification in <a href="http://api.temp-mail.ru/">api.temp-mail.ru</a>.</p>
+
+<h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p><a href="https://crate.io/packages/requests/">requests</a> - required.</p>
+
+<p><a href="https://crate.io/packages/simplejson/">simplejson</a> - optional, for a serious speed boost in JSON decode.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Installing with pip::</p>
+
+<pre><code>$ pip install temp-mail
+</code></pre>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Get all emails from given email login and domain::</p>
+
+<pre><code>from tempmail import TempMail
+
+tm = TempMail(login='denis', domain='@gnail.pw')
+print tm.get_mailbox()  # list of emails in denis@gnail.pw
+</code></pre>
+
+<p>Generate email address and get emails from it::</p>
+
+<pre><code>from tempmail import TempMail
+
+tm = TempMail()
+email = tm.get_email_address()  # v5gwnrnk7f@gnail.pw
+print tm.get_mailbox(email)  # list of emails
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/saippuakauppias">saippuakauppias</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
