@@ -1,7 +1,7 @@
 temp-mail
 =========
 
-Python API Wrapper for `temp-mail.ru <http://temp-mail.ru/>`_ service. Temp-mail is a service which lets you use anonymous emails for free.
+Python API Wrapper for `temp-mail.ru <https://temp-mail.ru/>`_ service. Temp-mail is a service which lets you use anonymous emails for free. You can view full API specification in `api.temp-mail.ru <http://api.temp-mail.ru/>`_.
 
 Requirements
 ------------
